@@ -33,9 +33,8 @@ public class ScoreController {
     @PostMapping("")
     @ResponseStatus(HttpStatus.CREATED)
     public ResponseDto create(@RequestBody Score request) {
-        if(request.getScore().intValue()>4){
-            System.out.println("mayor a 4");
-        }
+
+
         return service.create(request);
     }
 
