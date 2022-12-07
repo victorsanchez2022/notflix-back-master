@@ -33,7 +33,7 @@ public class ClientService {
         return response;
 
     }
-
+//condicionales
 
     public ResponseDto create(Client request) {
         ResponseDto response = new ResponseDto();

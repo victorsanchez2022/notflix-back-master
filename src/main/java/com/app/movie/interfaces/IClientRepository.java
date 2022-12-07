@@ -10,6 +10,7 @@ import java.util.List;
 
  */
 public interface IClientRepository extends MongoRepository<Client, String> {
+   //a continuacion se validara el cliente mediante su correo electronico
     @Query(value= "{email : ?0}") // SQL Equivalent : SELECT * FROM Client select * from Client where email=?
     List<Client> getClientByEmail(String email);
 }
